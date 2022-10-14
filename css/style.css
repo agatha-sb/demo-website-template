@@ -1,0 +1,128 @@
+/******** Google Fonts ********/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/******** Color Schemes ********/
+/*
+:root {
+  --c-primary-dark: #FC6400;
+  --c-white: #ffffff;
+  --c-blue: #0012A2;
+  --c-red: #F12D2D;
+  --c-black-text: #000000;
+  --c-light-grey: #C0C0C0;
+  --c-dark-grey: #4F4F4F;
+  --c-primary-text: #FF5600;
+  --c-secondary-text: #2D2D2D;
+  --c-semi-grey: #666666;
+  --ff-primary: 'Montserrat', sans-serif;
+}
+*/
+
+/******** CSS Resets ********/
+* {
+  padding: 0;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a:focus, a:hover {
+  outline: none;
+}
+
+a {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: var(--c-black-text);
+  line-height: 18px;
+  font-weight: 400;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: 14px;
+  color: var(--c-black-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ff-primary);
+  margin-bottom: 0;
+}
+
+/******** Utility Classes ********/
+
+.container {
+  max-width: 1440px;
+}
+.custom-pad {
+  padding: 60px 0;
+}
+.custom-header {
+  /* change header bg here */
+  background-color: #f2f2f2;
+}
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+toggle-nav-css-start=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+
+/* .navbar-toggler {
+  border-color: #5f4b8b;
+  background: #5f4b8b;
+  outline: none;
+} */
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler {
+  position: relative;
+  /* float: right; */
+  padding: 9px 10px;
+  /* margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px; */
+  background-image: none;
+  border: 1px solid transparent;
+
+  margin: 0;
+height: 45px;
+width: 45px;
+border-radius: 0;
+z-index: 1;
+}
+.navbar-toggler { 
+  /*change the hamburger menu bg */
+  background-color: black;
+}
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+.navbar-toggler .icon-bar { 
+  /*change the hamburger bars color */
+  background-color: #fff;
+}
+.navbar-toggler .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+/*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+toggle-nav-css-end=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
