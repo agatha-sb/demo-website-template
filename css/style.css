@@ -3,26 +3,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /******** Color Schemes ********/
-/*
+
 :root {
-  --c-primary-dark: #FC6400;
-  --c-white: #ffffff;
-  --c-blue: #0012A2;
-  --c-red: #F12D2D;
-  --c-black-text: #000000;
-  --c-light-grey: #C0C0C0;
-  --c-dark-grey: #4F4F4F;
-  --c-primary-text: #FF5600;
-  --c-secondary-text: #2D2D2D;
-  --c-semi-grey: #666666;
+
+  
+  /* CSS HEX */
+  --c-primary: #ff9f1cff;
+  --c-secondary: #2ec4b6ff;
+  --c-accent: #08211fff;
+  --c-primary-alt: #ffbf69ff;
+  --c-secondary-alt: #cbf3f0ff;
+  
+  --c-white-900: #ffffffff;
+  --c-white-800: #f7fffe;
+  --c-black-900: #090b0bff;
+  
   --ff-primary: 'Montserrat', sans-serif;
 }
-*/
+
 
 /******** CSS Resets ********/
 * {
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 ul {
@@ -73,39 +77,73 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   max-width: 1440px;
 }
+
+.on-hover:hover > *:nth-child(2) {
+  display: block;
+}
+.fixed-top  {
+  background-color: var(--c-white-800) !important;
+}
+/******** Custom Properties ********/
 .custom-pad {
   padding: 60px 0;
 }
 .custom-header {
   /* change header bg here */
-  background-color: #f2f2f2;
+  background-color: var(--c-white);
+}
+.custom-button  {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--c-primary);
+  color: var(--c-white-900);
+  border: 2px solid transparent;
+
+  font-family: var(--ff-primary);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  /* width: 171px; */ 
+        /* or */
+  padding: 0px 32px;
+  height: 56px;
+
+  border-radius: 50px;
+
+  position: relative;
+}
+/* If there is a button icon */
+.custom-button {
+  gap: 0 10px;
+}
+.custom-button span {
+  margin: 0;
+}
+/* Basic Button Hover */
+.custom-button:hover {
+  background-color: transparent;
+  color: var(--c-primary);
+  border-color: var(--c-primary);
 }
 
 /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+toggle-nav-css-start=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
 
-/* .navbar-toggler {
-  border-color: #5f4b8b;
-  background: #5f4b8b;
-  outline: none;
-} */
 .navbar-toggler:focus {
   box-shadow: none;
 }
 .navbar-toggler {
   position: relative;
-  /* float: right; */
   padding: 9px 10px;
-  /* margin-top: 8px;
-  margin-right: 15px;
-  margin-bottom: 8px; */
   background-image: none;
   border: 1px solid transparent;
-
   margin: 0;
-height: 45px;
-width: 45px;
-border-radius: 0;
-z-index: 1;
+  height: 45px;
+  width: 45px;
+  border-radius: 0;
+  z-index: 1;
 }
 .navbar-toggler { 
   /*change the hamburger menu bg */
@@ -124,5 +162,89 @@ z-index: 1;
 .navbar-toggler .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-
 /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+toggle-nav-css-end=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+
+/* *-*-*-*-*-*-* HEADER SECTION *-*-*-*-*-*-* */
+.header-top {
+  padding-block: 1rem;
+  background-color: var(--c-white-800);
+}
+.header-top_socials,
+.header-top_contact {
+  gap: 25px;
+}
+.header-top_contact li a {
+  gap: 10px;
+  color: var(--c-accent);
+}
+.header-top_icon {
+  font-size: 17px;
+  color: var(--c-secondary);
+}
+.header-nav {
+  padding-block: 1.3rem;
+  transition: all 0.5s ease-in-out
+}
+.fixed-top .header-nav {
+  padding-block: 1rem;
+}
+.custom-navbar-nav {
+  align-items: center;
+  gap: 0 70px;
+}
+.on-hover .dropdown-toggle::after {
+  display: none;
+}
+.custom-navbar-nav li .nav-link {
+  padding: 0 !important;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--c-accent);
+  text-transform: uppercase;
+}
+.fixed-top .custom-navbar-nav li .nav-link {
+  font-size: 13px;
+}
+.fixed-top .custom-button {
+  font-size: 12px;
+  max-height: 45px;
+  padding-inline: 22px;
+}
+.navbar-brand img {
+  height: 72px;
+  transition: all 0.6s ease-in-out;
+}
+.fixed-top .navbar-brand img {
+  height: 60px;
+}
+/* *-*-*-*-*-*-* HERO SECTION *-*-*-*-*-*-* */
+.banner_carousel img {
+  max-height: 820px;
+  object-fit: cover;
+}
+
+.banner_carousel .carousel-item::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(8, 33, 31, 0.57);
+  top: 0; left: 0;
+  /* z-index: -1; */
+  position: absolute;
+}
+
+.custom-banner_content {
+  right: unset;
+  left: 50%;
+  bottom: unset;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.typing-text::after {
+  content: "|";
+  animation: blink 1s step-end infinite;
+}
+.custom-banner-content h2 span {
+  display: flex;
+}
