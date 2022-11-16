@@ -13,10 +13,10 @@
   <!-- Responsive CSS Stylesheet -->
    <link rel="stylesheet" href="css/responsive.css"> 
   <!-- Fontawesome CDN -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
   <!-- Lineicons CDN -->
   <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
-  <title>Company_Name</title>
+  <title>Demo - Home v1</title>
 </head>
 <body>
   <!-- Owl Carousel Structure -->
@@ -25,76 +25,186 @@
     	<div class="item"><h4>1</h4></div>
 	</div>
 -->
-  <header class="custom-header py-xl-3 py-2">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg py-0">
-          <a class="navbar-brand ms-0 py-0" href="#">LOGO HERE</a>
-          <div class="navbar-header me-0">
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div> 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>              
-            </ul>
-          </div>
-      </nav>
-    </div>    
-    <div class="container">
-      <nav class="navbar py-0">
-        <a class="navbar-brand ms-0 py-0" href="#">LOGO HERE</a>
-        <div class="navbar-header me-0">
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+  <header class="custom-header">
+    <div class="header-top">
+      <div class="container ">
+        <div class="header-top_content d-flex justify-content-between">
+          <ul role="list" class="d-flex header-top_socials">
+            <li><a href="#" class="header-top_icon"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="#" class="header-top_icon"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#" class="header-top_icon"><i class="fa-brands fa-hackerrank"></i></a></li>
+          </ul>
+          <ul role="list" class="d-flex header-top_contact ">
+            <li>
+              <a href="#" class="d-flex align-items-center"><span class="header-top_icon"><i class="fa-solid fa-envelope"></i></span>
+                <p class="demo d-none d-sm-block">swagatabose27@gmail.com</p>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+91 8961219180" class="d-flex align-items-center"> <span class="header-top_icon"><i class="fa-solid fa-phone"></i></span>
+                <p class="demo d-none d-sm-block">+91 8961-2191-80</p>
+              </a>
+            </li>
+          </ul>
+    
         </div>
-        <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-          <div class="offcanvas-header custom-offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body custom-offcanvas-body">
-            <div>
-              Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-            </div>
-            <div class="dropdown mt-3">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                Dropdown button
+      </div>
+    </div>
+    <div class="header-nav">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg py-0">
+            <a class="navbar-brand ms-0 py-0" href="#">
+              <img src="./images/logo.png" alt="Site Logo">
+            </a>
+            <div class="navbar-header me-0">
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
               </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </div> 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-lg-0">
+                <!-- Dropdown on hover -->
+                <li class="nav-item dropdown on-hover">
+                  <a class="nav-link dropdown-toggle" href="index.html" aria-expanded="false">
+                    Home
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="home-v2.html">Home v2</a></li>
+                  </ul>
+                </li>
+                <!-- Dropdown on Click -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="javascript:void(0)">Service Inner</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>              
+                <li class="nav-item">
+                  <a class="custom-button" href="javascript:void(0)">
+                    Call Now
+                    <span><i class="fas fa-arrow-right"></i></span>
+                  </a>
+                </li>              
               </ul>
             </div>
+        </nav>
+      </div>   
+    </div>
+  </header>
+  <section class="custom-banner">
+    <div id="carouselExampleControls" class="banner_carousel carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/hero.jpg" class="d-block w-100" alt="Banner carousel image">
+          <div class="container container-alt">
+            <div class="row">
+              <div class="col-12 ms-0">
+                <div class="carousel-caption custom-banner_content">
+                  <h2>We are Experts in Statup Services <span class="typing-text">Mar</span></h2>
+                  <p>We provide both surgical and Non-Surgical solution!</p>
+                  <a class="custom-button" href="javascript:void(0)" target="_self">FREE ONLINE CONSULTATION</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-      
-    </div>    
-  </header>
-  
-  
+        <div class="carousel-item">
+          <img src="./images/hero.jpg" class="d-block w-100" alt="Banner carousel image">
+          <div class="container container-alt">
+            <div class="row">
+              <div class="col-12 ms-0">
+                <div class="carousel-caption custom-banner_content">
+                  <h2>Your happiness... is our success!</h2>
+                  <p>We provide both surgical and Non-Surgical solution!</p>
+                  <a class="custom-button" href="javascript:void(0)" target="_self">FREE ONLINE CONSULTATION</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/hero.jpg" class="d-block w-100" alt="Banner carousel image">
+          <div class="container container-alt">
+            <div class="row">
+              <div class="col-12 ms-0">
+                <div class="carousel-caption custom-banner_content">
+                  <h2>Your happiness... is our success!</h2>
+                  <p>We provide both surgical and Non-Surgical solution!</p>
+                  <a class="custom-button" href="javascript:void(0)" target="_self">FREE ONLINE CONSULTATION</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <section class="custom-quick-services custom-pad pt-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-12">
+          <div class="quick-service">
+            <div class="quick-service-icon">
+              <img src="images/quick-service-icon-1.png" alt="Icon depicting plastic surgery quick service">
+            </div>
+            <div class="quick-service-heading">
+              <h4>Plastic <br> Surgery</h4>
+            </div>
+            <div class="quick-service-text">
+              <p class="demo">Dr. Shafer is a modern generation surgeon and an innovator. At Shafer Clinic Fifth Avenue he stays on the cutting edge of technological and surgical developments to offer his patients</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="quick-service">
+            <div class="quick-service-icon">
+              <img src="images/quick-service-icon-2.png" alt="Icon depicting the skin laser lab quick service">
+            </div>
+            <div class="quick-service-heading">
+              <h4>The Skin Laser <br>
+                Lab</h4>
+            </div>
+            <div class="quick-service-text">
+              <p class="demo">Dr. David Shafer uses state-of-the-art equipment and the latest techniques to perform Skin &amp; Laser treatments.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="quick-service p-0">
+            <div class="quick-service-icon">
+              <img src="images/quick-service-icon-3.png" alt="Icon depicting metabolic aesthetics quick service">
+            </div>
+            <div class="quick-service-heading">
+              <h4>Metabolic <br>
+                Aesthetics</h4>
+            </div>
+            <div class="quick-service-text">
+              <p class="demo">David Shafer, MD, FACS is a double board certified, award-winning New York City plastic surgeon who specializes in all aspects of aesthetic &amp; cosmetic surgery.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, est nobis ducimus sapiente atque dolore explicabo modi eos voluptatum unde eaque necessitatibus molestiae, nihil ut quasi cum obcaecati recusandae odit? Id quaerat nam obcaecati, dolore impedit error perspiciatis ex accusantium tempore distinctio sed fuga quibusdam numquam, voluptatum ipsa blanditiis ea aspernatur cupiditate earum consequatur non nulla exercitationem. Voluptatem, non animi deserunt nulla corporis officiis odio in. Dignissimos beatae alias enim dolorum itaque sint culpa sunt vel, ipsam temporibus omnis tenetur est autem animi sit numquam nesciunt consectetur consequuntur id quisquam quos, dolorem eum neque. Quisquam, iure vero inventore tenetur facilis laborum, reiciendis ea debitis tempora dolores nam facere eligendi ipsa. Dolore exercitationem fuga rem. Distinctio aliquid veniam at exercitationem debitis vero dicta rerum aspernatur voluptatibus, dolore architecto, asperiores fuga harum deserunt nemo expedita ab eius labore quidem excepturi ad quasi dolor consectetur reprehenderit? Soluta obcaecati aperiam mollitia ut similique, est dolore voluptate, distinctio dolorum minima explicabo nam assumenda rem eligendi accusamus dolorem commodi recusandae molestias eius officiis. Eius eligendi excepturi non id ex rem suscipit, consequatur at voluptas, perspiciatis repudiandae quia, rerum sed cum? Explicabo ut assumenda, sapiente quidem, exercitationem quam iusto rerum quibusdam ratione dolor aspernatur id dignissimos fugit obcaecati reiciendis maiores quo libero, quasi rem tempora ipsum soluta fugiat nostrum temporibus. Modi, ipsam voluptas. In nesciunt esse assumenda, tenetur nostrum explicabo totam repudiandae adipisci deserunt! Eos at delectus officiis architecto consequatur dolorem dolores non tempore! Quo repellat veniam aliquid unde dolorum hic, nisi, tempora nostrum placeat modi asperiores velit non nesciunt, numquam perspiciatis ea ab dicta minima quas praesentium et. Sequi enim nobis similique mollitia? Laborum totam molestiae nobis aspernatur quisquam tenetur asperiores deleniti provident, assumenda fugiat qui obcaecati nulla voluptatum aliquam. Adipisci voluptatem, ab eum tempora iusto quasi odit natus ullam autem repudiandae magnam laudantium inventore vero quia molestiae harum debitis porro accusamus tempore in aut. Deleniti labore deserunt, vitae dolor enim cumque aliquam nobis. Aspernatur cum voluptate perspiciatis quisquam voluptatem expedita vero eum perferendis in excepturi delectus, dolorum iure necessitatibus laborum fugit debitis eius ducimus error sit numquam nam? Tenetur vel provident ipsum minus. Ex sed libero eius vel officiis assumenda commodi? Natus, alias sunt, recusandae saepe in quasi adipisci repellat magnam nisi iste ullam qui ad nobis doloribus libero molestiae aliquid repellendus earum a. Dolore, beatae aliquid. Consectetur hic esse molestias eum amet quas unde sapiente, rerum architecto totam? Ducimus, delectus saepe? Praesentium deserunt fugiat ad, voluptatum mollitia qui laborum tenetur vero aut obcaecati voluptates, sit ullam dicta doloremque quos deleniti temporibus pariatur hic eius sapiente veritatis provident eligendi ea suscipit? Accusantium eos dolore similique odio nihil nostrum, exercitationem est blanditiis nesciunt maiores beatae dolorum minus iste aliquid repellendus non sunt architecto provident fuga numquam hic dolor. Repellendus doloribus quas ut nulla culpa, similique est eius qui, unde voluptates provident laboriosam. Suscipit, impedit nam quae quam ullam labore, tempora autem voluptates maxime ipsa quaerat atque inventore earum hic rerum qui quidem id. Neque reiciendis magni tenetur, a corrupti soluta adipisci. Eius delectus cumque accusamus quis?
+    </div>
+  </section>
   <script src="js/jquery-min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
